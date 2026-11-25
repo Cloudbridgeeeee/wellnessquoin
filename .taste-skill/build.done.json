@@ -1,0 +1,11 @@
+{
+ "page": "dist/index.html",
+ "dir": "/home/user/wellnessquoin",
+ "kind": "software",
+ "start": "2026-11-25T07:54:25.074Z",
+ "by": "start.mjs",
+ "url": null,
+ "root": "dist",
+ "category": "retail demand planning software",
+ "primary": "Request a forecast"
+}

@@ -1,0 +1,187 @@
+{
+  "name": "WellnessQuoin",
+  "primary": "Request a forecast",
+  "accent": "#1f6b3a",
+  "ink": "#0a0a0a",
+  "bg": "#f8f8f8",
+  "surface": "#eeeeee",
+  "fontLink": "<link href=\"https://fonts.googleapis.com/css2?family=Geist:wght@400..700&family=Geist+Mono:wght@400..500&display=swap\" rel=\"stylesheet\">",
+  "fontDisplay": "\"Geist\", system-ui, sans-serif",
+  "fontText": "\"Geist\", system-ui, sans-serif",
+  "client": "Victoria Island store, Lagos",
+  "note": "A fixed range of 186 SKUs. Results here come from fixed data in your browser; no AI service is called.",
+  "tabs": {
+    "overview": "Forecast",
+    "records": "SKUs",
+    "queue": "Reorders to approve"
+  },
+  "overview": {
+    "title": "Demand, next 12 weeks",
+    "kpis": [
+      [
+        "SKUs",
+        "186"
+      ],
+      [
+        "On track",
+        "171"
+      ],
+      [
+        "To reorder",
+        "9"
+      ],
+      [
+        "Aging",
+        "6"
+      ]
+    ],
+    "chart": {
+      "title": "Weeks of cover per range",
+      "labels": [
+        "Care",
+        "Oils",
+        "Wash",
+        "Gifts",
+        "Vitamins",
+        "Candles",
+        "Books",
+        "Bath"
+      ],
+      "values": [
+        4,
+        5,
+        3,
+        9,
+        7,
+        4,
+        18,
+        22
+      ],
+      "threshold": 4,
+      "thresholdLabel": "Reorder at 4 wk",
+      "caption": "Ranges at or under the line need orders."
+    }
+  },
+  "records": {
+    "title": "SKUs",
+    "searchHint": "Product or supplier",
+    "statusCol": 3,
+    "columns": [
+      "SKU",
+      "Supplier",
+      "Cover",
+      "Status",
+      "Lead time",
+      "Next step"
+    ],
+    "tones": {
+      "Reorder": "bad",
+      "Aging": "warn",
+      "On track": "good"
+    },
+    "rows": [
+      [
+        "Lubricant 100 ml",
+        "Ikeja Supplies",
+        "2 wk",
+        "Reorder",
+        "21 days",
+        "Order to approve"
+      ],
+      [
+        "Intimate wash 250 ml",
+        "Apapa Care",
+        "3 wk",
+        "Reorder",
+        "28 days",
+        "Order to approve"
+      ],
+      [
+        "Scented candle",
+        "Yaba Home",
+        "4 wk",
+        "Reorder",
+        "14 days",
+        "Order to approve"
+      ],
+      [
+        "Bath salts 500 g",
+        "Apapa Care",
+        "22 wk",
+        "Aging",
+        "14 days",
+        "Consider a promotion"
+      ],
+      [
+        "Wellness guide book",
+        "Lekki Press",
+        "18 wk",
+        "Aging",
+        "30 days",
+        "Hold orders"
+      ],
+      [
+        "Massage oil 200 ml",
+        "Ikeja Supplies",
+        "5 wk",
+        "On track",
+        "14 days",
+        "None"
+      ],
+      [
+        "Vitamin gummies",
+        "Abuja Health",
+        "7 wk",
+        "On track",
+        "10 days",
+        "None"
+      ],
+      [
+        "Body lotion 300 ml",
+        "Apapa Care",
+        "6 wk",
+        "On track",
+        "21 days",
+        "None"
+      ],
+      [
+        "Herbal tea blend",
+        "Jos Farms",
+        "8 wk",
+        "On track",
+        "12 days",
+        "None"
+      ]
+    ]
+  },
+  "queue": {
+    "title": "Reorders waiting for a buyer",
+    "lead": "Each draft order lists units, supplier and the forecast behind it. Nothing goes to a supplier until a buyer approves.",
+    "items": [
+      {
+        "id": "lube",
+        "title": "Lubricant 100 ml: 400 units",
+        "detail": "Ikeja Supplies, 21-day lead time.",
+        "reason": "Two weeks of cover against a forecast of 340 units in four weeks."
+      },
+      {
+        "id": "wash",
+        "title": "Intimate wash 250 ml: 240 units",
+        "detail": "Apapa Care, 28-day lead time.",
+        "reason": "Three weeks of cover; lead time is four weeks."
+      },
+      {
+        "id": "candle",
+        "title": "Scented candle: 120 units",
+        "detail": "Yaba Home, 14-day lead time.",
+        "reason": "December gift demand forecast 40% above November."
+      },
+      {
+        "id": "gift",
+        "title": "Gift set, small: 300 units",
+        "detail": "Ikeja Supplies, order by 5 January.",
+        "reason": "February sales were 2.4 times a normal month in each of the last two years."
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+ "palettes": [
+  "mint-pink-accounts"
+ ],
+ "types": [
+  "geist"
+ ],
+ "dealt": [
+  "geist",
+  "gabarito",
+  "host"
+ ],
+ "moments": [
+  {
+   "id": "word-highlight",
+   "at": "2026-11-25T07:54:25.175Z",
+   "seed": "a3661eec"
+  }
+ ]
+}
